@@ -1,0 +1,174 @@
+.section-focus {
+    padding-top: 70px;
+    padding-bottom: 9px;
+    position: relative;
+    overflow: hidden;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding-top: 59px;
+        padding-bottom: 0px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        padding-top: 80px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+        width: 97px;
+        height: 96px;
+        background-image: url("../img/sections-tasks-focus/rectangle-mobile.png");
+    
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) { 
+            display: block;
+            content: "";
+            position: absolute;
+            top: 420px;
+            right: -186px;
+            left: unset;
+            width: 187px;
+            height: 187px;
+            background-image: url(../img/sections-tasks-focus/rectangle.png);
+        }
+    }
+}
+
+.section-focus__row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:space-between;
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        align-items: center;
+    }
+
+    h3 {
+        margin-bottom: 36px;
+
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 20px;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 47px;
+        }
+    }
+}
+
+.section-focus__img-wrapper {
+    margin-left: -10.3%;
+
+    @media (min-width: 540px) {
+        margin-left: 0px;
+    }
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        position: relative;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 287px;
+        height: 505px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        margin-left: 0px;
+        max-width: 50%;
+        height: 731px;
+    }
+}
+
+.section-focus__img {
+    position: static;
+    max-width: 100%;
+
+    @media (min-width: 540px) {
+        max-width: 560px;
+        margin-left: 47%;
+        margin-right: 50%;
+        transform: translateX(-50%);
+    }
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin: 0px;
+        transform: none;
+        position: absolute;
+        top: 0px;
+        right: 14px;
+        max-width: unset;
+        height: 518px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        right: -186px;
+        height: auto;
+    }
+}
+
+.row__column-wrapper {
+    text-align: center;
+
+    @media (min-width: 990px) {
+        margin-left: 65px;
+    }
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        text-align: left;
+        max-width: 383px;
+        margin-left: 0px;
+        padding-top: 27px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        max-width: none;
+        margin-bottom: 130px;
+    }
+
+    & h2 {
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    & h3 {
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 14px;
+        }
+    }
+
+    & h2, h3 {
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 50px;
+        }
+    }
+}

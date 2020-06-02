@@ -1,0 +1,267 @@
+.section-price {
+    position: relative;
+    padding: 72px 0px 56px;
+
+    color: white;
+    background-color: #49c38f;
+
+    &::before {
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 72px 0px 61px;
+
+        background-image: url("../img/section-price.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) { 
+        padding: 106px 0px 69px; 
+    }
+}
+
+.price-title__wrapper {
+    position: relative;
+    text-align: center;
+
+    & h1 {
+        color: white;
+        margin-bottom: 34px;
+
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 32px;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 71px;
+        }
+    }
+
+    & h2 {
+        color: white;
+        margin-bottom: 42px;
+
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 62px;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 77px;
+        }
+    }
+}
+
+.section-price__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: unset;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.price-column {
+    width: 290px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+
+    text-align: center;
+    
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: 0.5s;
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        width: 230px;
+        margin-right: 24px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        width: 303px;
+        margin-right: 30px;
+    }
+
+    h3 {
+        color: #b3b3b3;
+        margin-bottom: 8px;
+
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            argin-bottom: 6px;
+        }
+
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+        }
+    }
+
+    h1 {
+        font-size: 80px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 17px;
+
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 19px;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 13px;
+        }
+    }
+    
+    li:first-child{
+        margin-top: 30px;
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-top: 32px;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-top: 26px;
+        }
+    }
+}
+
+.price-column:last-child {margin-right: 0px;}
+
+.price-column:hover  {
+    background-color: rgb(48, 79, 254, 0.949);
+    transition: background-color 0.3s ease-in;
+    box-shadow: 0px 10px 30px 0px rgba(236, 232, 232, 0.7),0px 20px 30px 0px rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+    transition: 0.5s;
+
+    & p {
+        background-color: #2740cc;
+        transition: background-color 0.3s ease-in;
+    }
+
+    & button {
+        background-color: #fff;
+        transition: background-color 0.3s ease-in;
+        color: #666666;
+    }
+    & div {
+        border-color: rgb(44, 71, 230);
+        transition: border-color 0.3s ease-in;
+    }
+}
+
+.price-column__line {
+    padding: 38px 0px 29px;
+    border-bottom: 1px solid #000;
+    border-color: rgba(255, 255, 255, 0.05);
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 37px 0px 29px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        padding: 40px 0px 29px;
+
+    }
+}
+
+.price-column__tariff {
+    margin-left: 36%;
+    padding: 5px 8px 3px 12px;
+    width: 80px;
+    border-radius: 11.5px;
+    background-color: rgba(255, 255, 255, 0.281);
+    
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-left: 32%;
+        padding: 3px 4px 3px 9px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        margin-left: 37%;
+        padding: 5px 10px 5px 16px;
+    }
+}
+
+.price-column__tariff-desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.88;
+    margin-bottom: 34px;
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 33px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        margin-bottom: 25px;
+        line-height: 2.5;
+    }
+
+    & strong {
+        font-weight: 500;
+    }
+}
+
+.price-column__button {
+    padding: 18px 31px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}

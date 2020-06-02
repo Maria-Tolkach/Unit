@@ -1,0 +1,161 @@
+.section-tasks {
+    padding: 71px 0px 45px;
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+        width: 97px;
+        height: 48px;
+
+        background-image: url("../img/sections-tasks-focus/rectangle-mobile.png");
+        
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            background-image: none;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) { 
+            content: "";
+            position: absolute;
+            top: 266px;
+            left: 0px;
+
+            width: 187px;
+            height: 187px;
+            background-image: url("../img/sections-tasks-focus/rectangle.png");
+        }
+    }
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding: 65px 0px 43px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        padding: 94px 0px 24px;
+    }
+}
+ 
+.section-tasks__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: row-reverse;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        flex-direction: row;
+    }
+    
+    h3 {
+        margin-bottom: 40px;
+
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 20px;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 38px;
+        }
+    }
+}
+
+.row__column {
+    text-align: center;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        text-align: left;
+        width: 55%;
+        padding-left: 0px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        padding-left: 98px;
+        width: 48.6%;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 28px;
+        }
+        
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 33px;
+        }
+    }
+    p {
+        color: #808080;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.71;
+        margin-bottom: 53px;
+
+        @media (min-width: 540px) {
+            margin: 0px 10%;
+            margin-bottom: 40px;
+        }
+        
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            line-height: 2.14;
+            margin: 0px 0px 66px;
+        }
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin: 0px;
+        }
+    }
+}
+
+.row__column-right {
+    width: 202px;
+    height: 341px;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-right: 33px;
+        width: 270px;
+        height: 456px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        margin-left: 30px;
+        width: 50%;
+        height: auto;
+        padding-left: 82px;
+    }
+
+    img {
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-left: 15px;
+        }
+
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-left: 0px;
+        }
+    }
+}

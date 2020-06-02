@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {margin: 0px;}
+
+p {margin: 0px;}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+li { 
+    margin: 0px;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0px;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.none {display: none;}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        width: 738px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        width: 1200px;
+    }
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relative {position: relative;}
+
+.sectional-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 3.2px;
+    color: rgb(80, 227, 164);
+    transition: 0.5s;
+}
+
+.section-header {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.21;
+    color: rgb(46, 46, 46);
+
+    &&--white {color: white;}
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        font-size: 42px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        font-size: 48px;
+    }
+}
+
+.title-h3 {
+    color: #50e3a4;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+}

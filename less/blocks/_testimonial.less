@@ -1,0 +1,87 @@
+.testimonial-carousel {
+    max-width: 750px;
+    margin: 0px auto;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 520px;
+    margin: 0 auto;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        max-width: 467px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        max-width: 750px;
+    }
+}
+
+.testimonial__text {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 23px;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 2.13;
+        margin-bottom: 35px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        font-size: 18px;
+        line-height: 2.22;
+        margin-bottom: 60px;
+    }
+
+    p {max-width: 750px;}
+}
+
+.testimonial__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        flex-direction: row;
+    }
+}
+
+.testimonial__user-photo {
+    width: 60px;
+    margin-bottom: 20px;
+    height: 60px;
+    overflow: hidden; /*чтобы картинка не выходила за пределы*/
+    border-radius: 50%;
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        margin-right: 40px;
+        margin-bottom: 0px;
+    }
+
+    img {
+        max-width: unset;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*картинка растянется и будет отлично масштабироваться*/ 
+        object-position: center;
+    }
+}
+
+.testimonial__user-name {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+}

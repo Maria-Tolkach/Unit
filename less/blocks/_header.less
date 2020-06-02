@@ -1,0 +1,306 @@
+.header {
+    position: relative;
+
+    background-color: #867d7d;
+    color: white;
+    background-image: url("../img/header/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        height: 568px;
+        min-height: auto;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        height: 874px;
+    }
+}
+// overlay:
+.header::before {
+    display: block;
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.65);
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.header__content {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 89px;
+    padding-bottom: 65px;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        padding-top: 51px;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        padding-top: 59px;
+    }
+}
+
+.header__logo {
+    font-size: 62px;
+    letter-spacing: 12.4px;
+
+    margin: 0px;
+    margin-bottom: 8px;
+
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        font-size: 82px;
+        letter-spacing: 16.4px;
+        margin-bottom: 6px;
+    }
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {
+        font-size: 96px;
+        letter-spacing: 19.2px;
+        margin-bottom: 31px;
+    }
+}
+
+.header__desc {
+    max-width: 730px;
+    text-align: center;
+    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    
+    p {
+        //Медиа-запрос для планшетов и выше
+        @media (min-width: 768px) {
+            margin-bottom: 15px;
+            max-width: 565px;
+        }
+
+        //Медиа-запрос для десктоп
+        @media (min-width: 1200px) {  
+            margin-bottom: 15px;
+            max-width: 730px;
+        }
+    }
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        max-width: 730px;
+        margin-bottom: 70px;
+    }
+    
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) { 
+        // letter-spacing: 1.6px;
+        letter-spacing: 0px;
+        max-width: 730px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.header__form {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    flex-direction: column;
+
+    @media (min-width: 520px) {
+        width: 490px;
+    }
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.header__form-input {
+    width: 100%;
+    margin-bottom: 10px;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        margin-bottom: 0px;
+        width: 200px;
+        margin-right: 20px;
+    }
+}
+
+.header__form-submit {
+    .button_submit{
+        text-align: center;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    text-align: left;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+
+    transition: background-color 0.2s ease;
+
+    &::placeholder {
+    color: white;
+    }
+
+    &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &:hover {background-color: rgba(0, 0, 0, 0.7);}
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        width: 200px;
+    }
+}
+
+.button_submit {
+    width: 100%;
+    padding: 0px 20px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #50e2a3;
+    cursor: pointer;
+    
+    text-align: center;
+    line-height: 2.857;
+    letter-spacing: 2.8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    
+    transition: background-color 0.2s ease;
+    
+    &:hover, &:focus {
+        outline: none;
+        background-color: darken(#50e2a3, 20%);
+    }
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        width: 210px;
+    }
+}
+
+.header__scroll {
+    display: none;
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        display: block;
+
+        position: absolute;
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        scroll-behavior: smooth;
+
+        width: 32px;
+        height: 48px;
+    }
+}
+
+.header__top-buttons{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.header__nav-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        left: 5px;
+        right: auto;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        top: 64px;
+        left: 70px;
+        right: auto;
+    }
+}
+
+.header__search-button {
+    display: none;
+    
+    //Медиа-запрос для планшетов и выше
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    //Медиа-запрос для десктоп
+    @media (min-width: 1200px) {  
+        top: 63px;
+        right: 71px;
+    }
+}
